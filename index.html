@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TaskMaster</h1>
+    <div id="auth-section">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+    </div>
+    
+    <div id="task-section" style="display: none;">
+        <h2>Your Tasks</h2>
+        <input type="text" id="title" placeholder="Task Title">
+        <input type="text" id="description" placeholder="Description">
+        <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button onclick="createTask()">Add Task</button>
+        <div id="task-list"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
